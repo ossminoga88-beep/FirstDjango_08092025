@@ -11,6 +11,15 @@ author = {
 }
 
 
+items = [
+    {"id": 1, "name": "Кроссовки adidas", "quantity":5},
+    {"id": 2, "name": "Куртка кожаная", "quantity":2},
+    {"id": 5, "name": "Coca-cola 1 литр", "quantity":12},
+    {"id": 7, "name": "Картофель фри", "quantity":0},
+    {"id": 8, "name": "Кепка", "quantity":124},
+]
+
+
 def home(request):
     text = """
     <h1>"Изучаем django"</h1>
@@ -29,5 +38,5 @@ def about(request):
         """
     return HttpResponse(text)
 
-def get_item(request, item_id: str):
+def get_item(request, item_id: int):
     return HttpResponse(item_id)
