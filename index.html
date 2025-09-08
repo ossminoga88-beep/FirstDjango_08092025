@@ -1,0 +1,687 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=koi8-r">
+   <TITLE>Проект OpenNet - всё, что связано с открытым ПО, открытыми технологиями, Linux, BSD и Unix</TITLE>
+   <meta name="KeyWords" content="Unix, Linux, FreeBSD, OpenBSD, Solaris, Cisco, настройка, администрирование, сети, протоколы, безопасность, security, программирование, софт, программы, руководства, документация, русификация, локализация, FAQ, perl">
+   <meta name="Description" content="Проект OpenNet - все о Unix системах и открытых технологиях для администраторов, программистов и пользователей">
+   <meta content="/opennet_icon_128.png" itemprop="image">
+   <link rel="icon" type="image/png" href="/favicon.png">
+   <link href="/opennet_120.png" rel="apple-touch-icon">
+   <link href="/opennet_180.png" rel="apple-touch-icon" sizes="180x180">
+   <link rel="icon" type="image/png" href="/opennet_128.png" sizes="128x128">
+   <link rel="icon" type="image/png" href="/opennet_192tg.png" sizes="192x192">
+  
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_all_utf.rss" title="Все в одном: главные + мини-новости">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_full_utf.rss" title="Полные тексты всех новостей">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_6.rss" title="OpenNews RSS: главные новости">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_mini.rss" title="Mini-News RSS: мини-новости">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_review.rss" title="Фильтр: События">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_arts.rss" title="Фильтр: Обзоры статей">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_sec.rss" title="Фильтр: Проблемы безопасности">
+   <link rel="alternate" type="application/rss+xml" href="/opennews/opennews_prog.rss" title="Фильтр: Новые версии программ">
+   <link rel="search" href="/opensearch.xml" title="OpenNet.ru search" type="application/opensearchdescription+xml">
+   <script language="JavaScript" src="/ajax_idx.js"></script>
+</HEAD>
+<BODY BGCOLOR="#E3E4D0" TEXT="#404040">
+<LINK REL="stylesheet" href="/opennet4.css" type="text/css">
+<!--htdig_noindex-->
+<FORM method="get" action="https://www.opennet.ru/search.shtml">
+<aside>
+<div style="width: 100%; text-align: right; font-size: 70%; background: #E9EAD6; margin-bottom:-10px;">
+Профиль: <b><a href="/~" rel="nofollow" title="/~ - сводная страница участника"><u>Аноним</u></a></b> (<a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=login">вход</a> | <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=user_register">регистрация</a>)
+
+</div>
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+<TR>
+<TD width=300 VALIGN="BOTTOM" BGCOLOR="#E9EAD6" style="background: #E9EAD6 url('/back.gif') repeat-x bottom left">
+<A HREF="/"><IMG SRC="/opennet2.gif" HEIGHT=60 WIDTH=249 ALT="The OpenNET Project" BORDER="0"></A><br>
+</TD>
+<TD WIDTH=100 ALIGN=CENTER BGCOLOR="#E9EAD6" style="background: #E9EAD6 url('/back.gif') repeat-x bottom left">
+
+</TD><TD WIDTH=50% ALIGN=CENTER BGCOLOR="#E9EAD6" style="background: #E9EAD6 url('/back.gif') repeat-x bottom left;padding-bottom:10px;">
+<table width="100%" border=0>
+<tr>
+<td width="22%">
+ <A HREF="./opennews/" class="h"><b>НОВОСТИ</b></A> (<a href="./news/opennet.shtml" class="h">+</a>)
+</td><td width="18%%">
+  <A HREF="./mp/" class="h"><b>КОНТЕНТ</b></A>
+</td><td width="14%">
+  <A HREF="http://wiki.opennet.ru" class="h"><b>WIKI</b></A>
+</td><td width="14%">
+   <A HREF="./man.shtml" class="h"><b>MAN'ы</b></A>
+</td><td width="16%">
+   <A HREF="./forum/" class="h"><b>ФОРУМ</b></A>
+</td><td width="16%">
+<A HREF="./search.shtml" class="h" onMouseOver="document.getElementById('form12').style.display='block';">Поиск</A>&nbsp;(<A HREF="./keywords/" class="h">теги</A>)
+<INPUT id="form12" style="display: none;" type="text" size="10" name="words" value="" title='для поиска в google наберите "g фраза"'>
+</td></tr>
+</table>
+
+</TD><TD align=right WIDTH=20% BGCOLOR="#E9EAD6" style="background: #E9EAD6 url('/back.gif') repeat-x bottom left;padding-bottom:5px;">
+
+<a href="https://www.opennet.ru/opennews/opennews_all_utf.rss"><img src="/img/rss.png" height="16" width="16" alt="RSS" title="RSS" border="0"></a>&nbsp;<a href="https://twitter.com/opennetru"><img src="/twitter.png" height="16" width="16" alt="twitter" title="Twitter" border="0"></a>&nbsp;<a href="https://vk.com/opennet"><img src="/img/vkontakte.gif" height="16" width="16" title="ВКонтакте" border="0"></a>&nbsp;<a href="https://zen.yandex.ru/opennet"><img src="/img/zen.png" height="16" width="16" title="Yandex Zen" border="0"></a><!--&nbsp;<a href="https://www.facebook.com/OpenNet.News/"><img src="/img/facebook.gif" height="16" width="16" title="Facebook" border="0"></a>-->&nbsp;<a href="https://telegram.space/opennet_ru"><img src="/img/telegram2.png" height="16" width="16" title="Telegram" border="0"></a>
+</TABLE>
+</aside>
+
+<style>
+    .hdr_mobile {
+	text-align: center; 
+	display: none;
+	margin: 0px;
+	padding: 0px;
+    }
+</style>
+<div class=hdr_mobile>
+<div style="margin-left: auto; margin-right: auto; width: 100%; height: 70px; border:1px solid #b0b190; min-width: 360px; max-width: 600px; background: #E9EAD6 url('/back.gif') repeat-x bottom left;">
+<div style="float:left; width: 249px; height: 60px; margin-top: 10px;">
+<A HREF="/"><IMG SRC="/opennet2_lite.gif" style="height: 60px; width: 249px; border: 1px;" ALT="The OpenNET Project / Index page"></A>
+</div>
+<div style="float: left; text-align: center; height: 70px; width: 331px; padding: 5px; margin-left: 10px;">
+<br><small>[ <a href="/opennews/">новости</a>&nbsp;/<a href="/opennews/?full_lines=15&amp;lines=15&amp;mid_lines=00">+++</a> | <a href="/forum/">форум</a> | <a href="/keywords/">теги</a>
+| <a href="tg://resolve?domain=opennet_ru"><img src="/img/telegram2.png" height="16" width="16" title="Telegram" border="0" style="margin-bottom: -4px;"></a>
+]</small>
+</div>
+</div>
+</div>
+<div style="clear: both;"></div>
+
+
+<div style="float: left; width: 279; text-align: left;padding-right: 60px;" id=adv>
+</div>
+<div style="padding-top: 0px;position:absolute;left:50%;margin-left:-235px;width:470px;" id=adv2>
+</div>
+<div style="width: 279;float: right;" id=adv3>
+</div>
+<div style="clear: both;"></div>
+<br>
+</FORM>
+<!--/htdig_noindex-->
+
+
+
+<link rel="stylesheet" href="/opennet_idx7.css" type="text/css">
+
+<div class=m_col id=as2>
+
+<div class=hdr_main>
+
+<div id="tabs_top">
+<div class="tab-selected" id="tab1" onclick="tabClick(1)">главные&nbsp;новости</div>
+<div class="tab" id="tab2" onclick="tabClick(2)">мини-новости</div>
+<div class="tab" id="tab3" onclick="tabClick(3)">важное</div>
+<div class="tab-null"><a href="/opennews/">аннотации</a>&nbsp;/&nbsp;<a href="/opennews/?full_lines=15&lines=15&mid_lines=00">раскрыть</a>&nbsp;</div>
+</div>
+<div id="top_news">
+<table class=ttxt style="margin-bottom: 0px; border-bottom: none">
+<tr><td width=1>&middot;</td><td class=tdate  >08.09</td><td class=tnews><a href="/opennews/art.shtml?num=63842">Началось альфа-тестирование FreeBSD 15</a> <span class=cnt>(4)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >08.09</td><td class=tnews><a href="/opennews/art.shtml?num=63841">При помощи AI для новых ядер Linux портирован драйвер ftape, удалённый 20 лет назад</a> <span class=cnt>(146 <b style="background: #F9EAD6;">+30</b>)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >07.09</td><td class=tnews><a href="/opennews/art.shtml?num=63838">Выпуск среды рабочего стола Budgie 10.9.3</a> <span class=cnt>(25 &ndash;2)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td colspan=3 style="padding-top: 0px; padding-bottom: 0px; text-align: right; font-size: 9pt"><a href="#mini" onclick="tabClick(2)">&gt;&gt; еще 3 мини-новости за день</a></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >06.09</td><td class=tnews><a href="/opennews/art.shtml?num=63834">Первый альфа выпуск дистрибутива KDE Linux, развиваемого проектом KDE</a> <span class=cnt>(132 +7)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >06.09</td><td class=tnews><a href="/opennews/art.shtml?num=63831">В ходе атаки GhostAction скомпрометировано 817 репозиториев на GitHub</a> <span class=cnt>(101 +13)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >05.09</td><td class=tnews><a href="/opennews/art.shtml?num=63818">Выпуск графического редактора GIMP 3.1.4</a> <span class=cnt>(72 <b style="background: #F9EAD6;">+38</b>)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >05.09</td><td class=tnews><a href="/opennews/art.shtml?num=63827">Выпуск LKRG 1.0.0 для защиты от эксплуатации уязвимостей в ядре Linux</a> <span class=cnt>(55 +18)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >04.09</td><td class=tnews><a href="/opennews/art.shtml?num=63824">Релиз дистрибутива Linux Mint 22.2</a> <span class=cnt>(156 +19)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >04.09</td><td class=tnews><a href="/opennews/art.shtml?num=63819">Перед релизом GNOME 49 в GDM возвращена поддержка X11 по умолчанию</a> <span class=cnt>(<b style="background: #F9EAD6;">190</b> +27)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >04.09</td><td class=tnews><a href="/opennews/art.shtml?num=63820">Выпуск miracle-wm 0.7, композитного менеджера на базе Wayland и Mir </a> <span class=cnt>(17 +2)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >03.09</td><td class=tnews><a href="/opennews/art.shtml?num=63817">Выпуск web-браузера Chrome 140 с поддержкой скрытия IP и блокировки скриптов</a> <span class=cnt>(66 &ndash;9)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate style="font-weight: bold">03.09</td><td class=tnews><a href="/opennews/art.shtml?num=63816">Антимонопольное решение позволило Google сохранить Chrome и Android и продолжить отчисления Mozilla</a> <span class=cnt>(<b style="background: #F9EAD6;">304</b> +12)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >02.09</td><td class=tnews><a href="/opennews/art.shtml?num=63812">Выпуск Apache Cloudberry 2.0.0, открытой альтернативы СУБД Greenplum</a> <span class=cnt>(10 +13)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >31.08</td><td class=tnews><a href="/opennews/art.shtml?num=63807">Отчёт о развитии FreeBSD за второй квартал 2025 года </a> <span class=cnt>(180 +27)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >30.08</td><td class=tnews><a href="/opennews/art.shtml?num=63802">Выпуск композитного сервера Niri 25.08, использующего Wayland </a> <span class=cnt>(63 +7)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >29.08</td><td class=tnews><a href="/opennews/art.shtml?num=63795">Доступен графический тулкит GTK 4.20</a> <span class=cnt>(82 +6)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >29.08</td><td class=tnews><a href="/opennews/art.shtml?num=63794">Обновление платформы для создания персональных серверов FreedomBox</a> <span class=cnt>(71 +25)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >28.08</td><td class=tnews><a href="/opennews/art.shtml?num=63788">Выпуск композитных серверов Wayfire 0.10 и wlmaker 0.6, использующих Wayland</a> <span class=cnt>(75 +16)</span></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >28.08</td><td class=tnews><a href="/opennews/art.shtml?num=63786">Возможное повреждение CPU AMD Zen 5 при использовании библиотеки GNU MP</a> <span class=cnt>(<b style="background: #F9EAD6;">229</b> <b style="background: #F9EAD6;">+37</b>)</span></td></tr>
+<tr><td class=tdelim colspan=2></td><td class=tdelim0></td></tr>
+<tr><td width=1>&middot;</td><td class=tdate  >27.08</td><td class=tnews><a href="/opennews/art.shtml?num=63783">Релиз набора компиляторов LLVM 21</a> <span class=cnt>(51 +17)</span></td></tr>
+</table>
+</div>
+<div style="border-top: 1px solid #b0b190;width: 100%; text-align: right; font-size: 70%;"><a href="/opennews/opennews_all_utf.rss"><b>RSS</b></a> | <a href="/announce_news.shtml?c=f" style="color: #B00000;">Добавить новость</a> | <span id="next_link"><a href="/opennews/main.shtml">Развернуто</a> | <a href="/opennews/main.shtml?skip_10_version=on">Следующие 20 новостей <font color=red>&gt;&gt;</font></a></span></div>
+
+</div>
+
+<div class=hdr_mobile>
+<div class="l_title">
+<a href="/opennews/?full_lines=15&amp;lines=15&amp;mid_lines=00">Последние новости</a>
+</div>
+<table class=tlist>
+<tr><td><b style='color: #000000;'>-</b> <span  >08.09</span>&nbsp;<a href="/opennews/art.shtml?num=63842">Началось альфа-тестирование FreeBSD 15</a> <span class=cnt>(4)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >08.09</span>&nbsp;<a href="/opennews/art.shtml?num=63841">При помощи AI для новых ядер Linux портирован драйвер ftape, удалённый 20 лет назад</a> <span class=cnt>(146 +30)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >07.09</span>&nbsp;<a href="/opennews/art.shtml?num=63840">Релиз шрифтового движка FreeType 2.14</a> <span class=cnt>(53 +24)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >07.09</span>&nbsp;<a href="/opennews/art.shtml?num=63838">Выпуск среды рабочего стола Budgie 10.9.3</a> <span class=cnt>(25 &ndash;2)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >07.09</span>&nbsp;<a href="/opennews/art.shtml?num=63836">Выпуск Armbian 25.8 и DietPi 9.16, дистрибутивов для одноплатных компьютеров</a> <span class=cnt>(23 +11)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >07.09</span>&nbsp;<a href="/opennews/art.shtml?num=63835">Выпуск uutils 0.2.0, варианта GNU Coreutils на языке Rust </a> <span class=cnt>(134 +15)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >06.09</span>&nbsp;<a href="/opennews/art.shtml?num=63834">Первый альфа выпуск дистрибутива KDE Linux, развиваемого проектом KDE</a> <span class=cnt>(132 +7)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >06.09</span>&nbsp;<a href="/opennews/art.shtml?num=63833">Новые версии Debian 13.1 и 12.12 </a> <span class=cnt>(65 +21)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >06.09</span>&nbsp;<a href="/opennews/art.shtml?num=63831">В ходе атаки GhostAction скомпрометировано 817 репозиториев на GitHub</a> <span class=cnt>(101 +13)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >06.09</span>&nbsp;<a href="/opennews/art.shtml?num=63830">В Wine интегрирована начальная поддержка ntsync для повышения производительности игр</a> <span class=cnt>(90 <b style="background: #F9EAD6;">+54</b>)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >05.09</span>&nbsp;<a href="/opennews/art.shtml?num=63818">Выпуск графического редактора GIMP 3.1.4</a> <span class=cnt>(72 <b style="background: #F9EAD6;">+38</b>)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >05.09</span>&nbsp;<a href="/opennews/art.shtml?num=63829">В Firefox решено прекратить поддержку 32-разрядных Linux-систем </a> <span class=cnt>(<b style="background: #F9EAD6;">282</b> +12)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >05.09</span>&nbsp;<a href="/opennews/art.shtml?num=63827">Выпуск LKRG 1.0.0 для защиты от эксплуатации уязвимостей в ядре Linux</a> <span class=cnt>(55 +18)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63826">Microsoft открыл код интерпретатора BASIC для микропроцессоров M6502</a> <span class=cnt>(122 +15)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63825">Поддержка Firefox 115 ESR продлена до марта 2026 года</a> <span class=cnt>(130 <b style="background: #F9EAD6;">+54</b>)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63824">Релиз дистрибутива Linux Mint 22.2</a> <span class=cnt>(156 +19)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63823">Срок поддержки openSUSE Leap и openSUSE Leap Micro увеличен до 2 лет</a> <span class=cnt>(30 +9)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63822">Организация Rust Foundation запустила инициативу Rust Innovation Lab</a> <span class=cnt>(56 +4)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63819">Перед релизом GNOME 49 в GDM возвращена поддержка X11 по умолчанию</a> <span class=cnt>(<b style="background: #F9EAD6;">190</b> +27)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >04.09</span>&nbsp;<a href="/opennews/art.shtml?num=63820">Выпуск miracle-wm 0.7, композитного менеджера на базе Wayland и Mir </a> <span class=cnt>(17 +2)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >03.09</span>&nbsp;<a href="/opennews/art.shtml?num=63817">Выпуск web-браузера Chrome 140 с поддержкой скрытия IP и блокировки скриптов</a> <span class=cnt>(66 &ndash;9)</span></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span style="font-weight: bold">03.09</span>&nbsp;<a href="/opennews/art.shtml?num=63816">Антимонопольное решение позволило Google сохранить Chrome и Android и продолжить отчисления Mozilla</a> <span class=cnt>(<b style="background: #F9EAD6;">304</b> +12)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >02.09</span>&nbsp;<a href="/opennews/art.shtml?num=63812">Выпуск Apache Cloudberry 2.0.0, открытой альтернативы СУБД Greenplum</a> <span class=cnt>(10 +13)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >02.09</span>&nbsp;<a href="/opennews/art.shtml?num=63814">Опубликованы Linux From Scratch 12.4 и Beyond Linux From Scratch 12.4</a> <span class=cnt>(60 +20)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >02.09</span>&nbsp;<a href="/opennews/art.shtml?num=63813">Опубликован исходный код игры Русская рулетка 2: Закрытые планеты</a> <span class=cnt>(87 <b style="background: #F9EAD6;">+34</b>)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >01.09</span>&nbsp;<a href="/opennews/art.shtml?num=63810">Выпуск дистрибутива AerynOS 2025.08, ранее известного как Serpent OS</a> <span class=cnt>(51 +4)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >01.09</span>&nbsp;<a href="/opennews/art.shtml?num=63809">Выпуск volt-gui 1.2.0, GUI для оптимизации настроек, влияющих на работу игр в Linux</a> <span class=cnt>(62 +14)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >01.09</span>&nbsp;<a href="/opennews/art.shtml?num=63808">27 сентября в Москве пройдёт конференция разработчиков на языке Perl</a> <span class=cnt>(44 +17)</span></td></tr>
+<tr><td><div class=tdelim></div></td></tr>
+<tr><td><b style='color: #000000;'>-</b> <span  >31.08</span>&nbsp;<a href="/opennews/art.shtml?num=63807">Отчёт о развитии FreeBSD за второй квартал 2025 года </a> <span class=cnt>(180 +27)</span></td></tr>
+<tr><td><b style='color: #A0A0A0;padding-right: 1.3pt;'>&middot;</b> <span  >31.08</span>&nbsp;<a href="/opennews/art.shtml?num=63805">Релиз оконного менеджера IceWM 3.9.0 с поддержкой тем оформления курсора</a> <span class=cnt>(124 +23)</span></td></tr>
+
+</table>
+<div style="margin-left: auto; margin-right: auto; border-top: 0px solid #b0b190; width: 100%; max-width: 1100px; text-align: right; font-size: 70%;">
+<a href="/opennews/?full_lines=15&lines=15&mid_lines=00">раскрыть всё</a>
+| <a href="/opennews/index.shtml?skip=30&mid_lines=00">далее &gt;&gt;</a></div>
+<br><br>
+</div>
+
+
+<!-- #include virtual="/cgi-bin/opennet/rb2?ua"-->
+
+</div>
+<div class=r_col2 id=as1>
+
+<table class=thdr>
+<tr><td><a href="/lastsoft/"><u>Новые версии</u></a></td></tr>
+</table>
+<table class=ttxt>
+<tr><td class=tmenu>
+Программы:<br>
+&nbsp;	08.09&nbsp;<a href="https://github.com/audacious-media-player/audacious/tags" style="">Audacious 4.5.1</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/numpy/numpy/tags" style="">NumPy 2.3.3</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/i2p/i2p.i2p/tags" style="">I2P 2.9.0</a><br>
+&nbsp;	07.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63838" style="font-weight: 600;">Budgie 10.9.3</a><br>
+&nbsp;	07.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63840" style="font-weight: 600;">FreeType 2.14.0</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/clementine-player/Clementine/tags" style="">Clementine 1.4.1.51</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/bminor/binutils-gdb/tags" style="">GDB 17.0</a><br>
+&nbsp;	06.09&nbsp;<a href="https://github.com/HandBrake/HandBrake/tags" style="">HandBrake 1.10.2</a><br>
+&nbsp;	06.09&nbsp;<a href="https://github.com/gorhill/uBlock/tags" style="">ublock 1.66.0</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/GNOME/glib/tags" style="">Glib 2.86.0</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/linuxmint/cinnamon/tags" style="">Cinnamon 6.4.11</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/containers/podman/tags" style="">Podman 5.6.1</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/drupal/drupal/tags" style="">Drupal 11.2.4</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/snort3/snort3/tags" style="">Snort 3.9.5.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/postgres/postgres/tags" style="">PostgreSQL 18-RC1</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/npm/cli/tags" style="">NPM 11.6.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/systemd/systemd/tags" style="">systemd 257.9</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/django/django/tags" style="">Django 5.2.6</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/moby/moby/tags" style="">docker 28.4.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63820" style="font-weight: 600;">miracle-wm 0.7.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/golang/go/tags" style="">go 1.25.1</a><br>
+&nbsp;	03.09&nbsp;<a href="https://get.geo.opera.com/pub/opera/desktop/" style="">Opera 121.0.5600.50</a><br>
+&nbsp;	03.09&nbsp;<a href="https://gitlab.freedesktop.org/mesa/mesa/-/tags" style="">mesa 3d 25.2.2</a><br>
+<br>Дистрибутивы:<br>
+&nbsp;	06.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63833" style="font-weight: 600;">Debian GNU/Linux 13.1</a><br>
+&nbsp;	04.09&nbsp;<a href="https://blog.linuxmint.com/" style="">Linux Mint 22.2</a><br>
+&nbsp;	04.09&nbsp;<a href="https://chromereleases.googleblog.com/" style="">Chrome OS 139.0.7258.164</a><br>
+&nbsp;	29.08&nbsp;<a href="https://www.armbian.com/" style="">Armbian 25.8.1</a><br>
+&nbsp;	21.08&nbsp;<a href="https://gitlab.tails.boum.org/tails/tails/-/tags" style="">Tails 6.19</a><br>
+&nbsp;	19.08&nbsp;<a href="https://blogs.oracle.com/solaris/" style="">Solaris 11.4 SRU84</a><br>
+
+<br>Актуальные ядра Linux:<br>
+&nbsp; 04.09&nbsp;<a href="/kernel/6.16.5.html">6.16.5</a>, <a href="/kernel/6.12.45.html">6.12.45</a>, <a href="/kernel/6.6.104.html">6.6.104</a>, <a href="/kernel/6.1.150.html">6.1.150</a>, <a href="/kernel/5.15.191.html">5.15.191</a>, <a href="/kernel/5.10.242.html">5.10.242</a>, <a href="/kernel/5.4.298.html">5.4.298</a><br>
+&nbsp; 20.08&nbsp;<a href="/kernel/6.15.11.html">6.15.11</a><br>
+
+</td></tr>
+<tr><td class=tmenu><a href="/kernel/ml/">Изменения в ядре 6.17</a></td></tr>
+<tr><td class=tmenu><a href="/opennews/art.shtml?num=62475">Сводка событий за 2024 год</a></td></tr>
+</table>
+
+<aside>
+
+<!-- #include file="adv.inc"-->
+
+<!-- td valign="top" width="25%" -->
+
+<!--
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+  style="display:inline-block;width:240px;height:400px"
+  data-ad-client="ca-pub-2075278885744463"
+  data-ad-slot="3329689834"></ins>
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br><br>
+-->
+
+</aside>
+</div>
+<div style="clear: both;"></div>
+<br><br>
+<div class=m_col id=as2>
+
+<table class=thdr>
+<tr><td><a href="/tips/sml/"><u>СОВЕТЫ</u></a></td></tr>
+</table>
+<!--htdig_noindex-->
+<table class=tlist>
+<tr><td><b>-</b> 05.09.2025 <A HREF="/tips/3274_asterisk_voip_debug.shtml">Отладка исходного кода Asterisk</A></td></tr>
+<tr><td><b>-</b> 29.06.2025 <A HREF="/tips/3270_fuse_io_uring_optimization_tune_kernel.shtml">Повышение производительности FUSE при помощи io_uring</A></td></tr>
+<tr><td><b>-</b> 04.04.2025 <A HREF="/tips/3265_lvm_xfs_resize_centos_alma_rhel_rocky_linux.shtml">Объединение корневого и home разделов в RHEL/CentOS/Alma/Rocky 9 при использовании XFS</A></td></tr>
+<tr><td><b>-</b> 11.03.2025 <A HREF="/tips/3264_chrome_manifest_doh.shtml">Политики для включения Manifest V2 и форсирования DNS через HTTPS в Chrome для Linux </A></td></tr>
+<tr><td><b>-</b> 19.01.2025 <A HREF="/tips/3263_renpy_game_debian_build_git_patch.shtml">Установка движка графических квестов RenPy в Debian</A></td></tr>
+
+</table>
+<!--/htdig_noindex-->
+<br><br>
+<table class=thdr>
+<tr><td><a href="http://forum.opennet.ru/"><u><b>ФОРУМ</b></u></a></td></tr>
+</table>
+<table class=ttxt>
+<tr><td width=50% class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID1">Форум для администраторов</a></td>
+<td width=50%  class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID15">Форум для пользователей</a></td></tr>
+<tr><td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID6">Маршрутизаторы CISCO</a></td>
+<td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID8">WEB технологии</a></td></tr>
+<tr><td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID9">Программирование</a></td>
+<td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID10">Безопасность</a></td></tr>
+<tr><td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID12">Squid и др. прокси</a></td>
+<td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID14">Samba и Windows</a></td></tr>
+<tr><td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID2">Работа и объявления</a></td>
+<td class=tmenu><b>-</b> <a href="https://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=list&amp;forum=vsluhforumID13">Промышленные системы</a></td></tr>
+</table>
+
+
+<br><br>
+<table class=thdr>
+<tr><td><a HREF="/mp/"><u>ТЕМАТИЧЕСКАЯ ПОДБОРКА</u></a></td></tr>
+</table>
+
+<table class=ttxt>
+<tr><td style="padding: 5px;">
+<tr><td width="50%" class=i><b><A href="/mp/admin/">Администрирование</a></b>
+<div class=i> 
+<a href="/mp/traffic/" class=i>трафик</a>, 
+<a href="/mp/monitoring/" class=i>мониторинг</a>, 
+<a href="/mp/auth/" class=i>ldap</a>, 
+<a href="/mp/vpn/" class=i>vpn</a>...
+</div>
+</td>
+
+<td width="50%" class=i><A href="/mp/user/"><b>Пользователю, начинающим</a></b>
+<div class=i>
+<a href="/mp/rus/" class=i>русификация</a>, 
+<a href="/mp/multimedia/" class=i>мультимедиа</a>, 
+<a href="/mp/x/" class=i>иксы</a>...
+</div>
+</td></tr>
+
+<tr><td colspan=2>&nbsp;</td></tr>
+
+<tr><td class=i><b><A href="/mp/programmer/">Программирование для Unix и Web</a></b>
+<div class=i>
+<a href="/mp/gcc/" class=i>си</a>, 
+<a href="/mp/perl/" class=i>perl</a>, 
+<a href="/mp/python/" class=i>python</a>, 
+<a href="/mp/java/" class=i>java</a>, 
+<a href="/mp/php/" class=i>php</a>, 
+<a href="/mp/sql/" class=i>субд</a>...
+</div>
+</td>
+
+<td class=i><b><a href="/mp/security/">Безопасность, защита информации</a></b>
+<div class=i>
+<a href="/mp/firewall/" class=i>firewall</a>, 
+<a href="/mp/quota/" class=i>лимиты</a>, 
+<a href="/mp/crypt/" class=i>шифрование</a>...
+</div>
+</td></tr>
+
+<tr><td colspan=2>&nbsp;</td></tr>
+
+<tr><td class=i><b><a href="/mp/route/">Сети и протоколы</a></b>
+<div class=i>
+<a href="/mp/apache/" class=i>apache</a>, 
+<a href="/mp/samba/" class=i>samba</a>, 
+<a href="/mp/proxy/" class=i>proxy</a>, 
+<a href="/mp/ftp/" class=i>ftp</a>, 
+<a href="/mp/mail/" class=i>почта</a>...
+</div>
+</td>
+
+<td class=i><b><a href="/mp/admin/">Операционные системы</a></b>
+<div class=i>
+<a href="/mp/cisco/" class=i>cisco</a>, 
+<a href="/mp/linux/" class=i>linux</a>, 
+<a href="/mp/bsd" class=i>bsd</a>, 
+<a href="/mp/solaris/" class=i>solaris</a>,
+<a href="/mp/hardware/" class=i>железо</a>...
+</div>
+</td></tr>
+
+</table>
+<div style="width: 100%; text-align: right; font-size: 70%;">
+<a href="/docs">Архив документации</a> | <a href="/filebase.shtml">Архив статей</a>
+</div>
+</div>
+<div class=r_col id=as1>
+<aside>
+
+<table class=thdr>
+<tr><td>Памятные даты</td></tr>
+</table>
+<table class=tlist>
+<tr><td>8 сентября <a href="/google">Google</a>  исполнилось 27 лет
+</table>
+<br>
+
+
+<form method="get" action="/cgi-bin/opennet/jump.cgi">
+<table class=thdr style="padding: 0;">
+<tr><td>
+
+<select name="to" onChange="submit()" style="font-size: 9pt; width: 170px; background-color: #C7CBB1; color: #0000AD;">
+<option value="/mp/">Тематическая выборка
+<option value="admin">Администратору
+ <option value="mail">&nbsp;&nbsp;|-- Почта
+ <option value="dns">&nbsp;&nbsp;|-- DNS
+ <option value="apache">&nbsp;&nbsp;|-- HTTP-серверы
+ <option value="ftp">&nbsp;&nbsp;|-- FTP, BitTorrent
+ <option value="samba">&nbsp;&nbsp;|-- Samba, Windows
+ <option value="auth">&nbsp;&nbsp;|-- LDAP, Radius, Tacacs
+ <option value="proxy">&nbsp;&nbsp;|-- Proxy, squid, socks
+<option value="">
+ <option value="route">&nbsp;&nbsp;|-- Маршрутизация, NAT
+ <option value="firewall">&nbsp;&nbsp;|-- Firewall, Пакетные фильтры
+ <option value="voip">&nbsp;&nbsp;|-- VoIP, Asterisk
+ <option value="vpn">&nbsp;&nbsp;|-- VPN, PPPoE PPTP, IPSec
+ <option value="crypt">&nbsp;&nbsp;|-- Шифрование, SSH, SSL
+<option value="">
+ <option value="tune">&nbsp;&nbsp;|-- Оптимизация, тюнинг
+ <option value="cluster">&nbsp;&nbsp;|-- Кластеры
+ <option value="virtual">&nbsp;&nbsp;|-- Виртуализация
+ <option value="traffic">&nbsp;&nbsp;|-- Учет и ограничение трафика
+ <option value="monitoring">&nbsp;&nbsp;|-- Мониторинг, диагностика
+ <option value="security">&nbsp;&nbsp;|-- Безопасность
+<option value="">
+ <option value="fs">&nbsp;&nbsp;|-- Файловые системы
+ <option value="backup">&nbsp;&nbsp;|-- Резервное копирование
+ <option value="hardware">&nbsp;&nbsp;|-- Аппаратура, Железо
+ <option value="kernel">&nbsp;&nbsp;|-- Ядро ОС (kernel)
+ <option value="quota">&nbsp;&nbsp;|-- Квоты, ACL, ограничения
+<option value="">
+<option value="user">Пользователю
+ <option value="rus">&nbsp;&nbsp;|-- Русификация
+ <option value="x">&nbsp;&nbsp;|-- X Window
+ <option value="multimedia">&nbsp;&nbsp;|-- Мультимедиа, звук, видео
+ <option value="dialup">&nbsp;&nbsp;|-- Dial-up, ISP, PPP
+ <option value="mobile">&nbsp;&nbsp;|-- Мобильные устройства и SoC
+<option value="">
+<option value="programmer">Программисту
+ <option value="web">&nbsp;&nbsp;|-- Web-технологии
+ <option value="shell">&nbsp;&nbsp;|-- Shell-скрипты
+ <option value="perl">&nbsp;&nbsp;|-- Perl
+ <option value="python">&nbsp;&nbsp;|-- Python
+ <option value="gcc">&nbsp;&nbsp;|-- GCC, Си/Си++
+ <option value="php">&nbsp;&nbsp;|-- PHP
+ <option value="java">&nbsp;&nbsp;|-- Java, JSP
+ <option value="javascript">&nbsp;&nbsp;|-- JavaScript
+ <option value="html">&nbsp;&nbsp;|-- HTML, CSS
+ <option value="sql">&nbsp;&nbsp;|-- MySQL, PostgreSQL, NoSQL
+ <option value="ai">&nbsp;&nbsp;|-- Машинное обучение, AI
+<option value="">
+<option value="linux">Linux
+<option value="bsd">FreeBSD, OpenBSD, NetBSD
+<option value="solaris">Solaris
+<option value="cisco">Cisco, маршрутизаторы
+<option value="android">Android
+
+</select>&nbsp;<input type="submit" value="&gt;" style="background-color: #C7CBB1; color: #0000AD; border: 0px;">
+</td></tr>
+</table>
+
+
+<table class=ttxt>
+<tr><td class=tmenu><b>opennet.me</b></td><td class=tmenu>резервный домен</td></tr>
+<!--tr style="background-color: #F9EAD6;"><td class=tmenu><a href="http://ua.opennet.ru/"><u><b>UA.opennet.ru</b></u></a></td><td class=tmenu>зеркало</td></tr-->
+<tr><td class=tmenu><a href="https://opennet.ru/"><u><b>opennet.ru</b></u></a></td><td class=tmenu>легкая версия</td></tr>
+<tr><td class=tmenu><a href="https://mobile.opennet.ru/"><u><b>m</b>.opennet.ru</u></a></td><td class=tmenu>моб. версия</td></tr>
+<tr><td class=tmenu><a href="https://wiki.opennet.ru/"><u><b>wiki</b>.opennet.ru</u></a></td><td class=tmenu>База знаний</td></tr>
+<tr><td class=tmenu><a href="http://solaris.opennet.ru/"><u><b>solaris</b>.opennet.ru</u></a></td><td class=tmenu>Solaris</td></tr>
+<tr><td class=tmenu><a href="http://bsd.opennet.ru/"><u><b>bsd</b>.opennet.ru</u></a></td><td class=tmenu>*BSD</td></tr>
+<tr><td class=tmenu><a href="http://cisco.opennet.ru/"><u><b>cisco</b>.opennet.ru</u></a></td class=tmenu><td class=tmenu>Cisco</td></tr>
+<tr><td class=tmenu><a href="http://linux.opennet.ru/"><u><b>linux</b>.opennet.ru</u></a></td class=tmenu><td class=tmenu>Linux</td></tr>
+<tr><td class=tmenu><a href="http://web.opennet.ru/"><u><b>web</b>.opennet.ru</u></a></td><td class=tmenu>Вебтехнологии</td></tr>
+<tr><td class=tmenu><a href="http://security.opennet.ru/"><u><b>security</b>.opennet.ru</u></a></td><td class=tmenu>Безопасность</td></tr>
+<tr><td class=tmenu><a href="http://palm.opennet.ru/"><u><b>palm</b>.opennet.ru</u></a></td><td class=tmenu>Мобильный Linux</td></tr>
+<tr><td class=tmenu><a href="http://grab.opennet.ru/"><u><b>grab</b>.opennet.ru</u></a></td><td class=tmenu>Планета блогов</td></tr>
+<tr><td class=tmenu><a href="https://twitter.com/opennetru"><img src="/twitter.png" height="16" width="16" alt="twitter" title="Twitter" border="0"></a>&nbsp;<a href="https://vk.com/opennet"><img src="/img/vkontakte.gif" height="16" width="16" title="ВКонтакте" border="0"></a>&nbsp;<a href="https://telegram.space/opennet_ru"><img src="/img/telegram2.png" height="16" width="16" title="Telegram" border="0"></a>&nbsp;<a href="https://zen.yandex.ru/opennet"><img src="/img/zen.png" height="16" width="16" title="Yandex Zen" border="0"></a>&nbsp;<a href="https://www.facebook.com/OpenNet.News/"><img src="/img/facebook.gif" height="16" width="16" title="Facebook" border="0"></a></td><td class=tmenu>в соцсетях</td></tr>
+</table>
+
+<!-- #include file="poll2.inc"-->
+</form>
+<br>
+
+<script language=JavaScript src="https://www.opennet.ru/cgi-bin/opennet/hints.cgi?button_network">
+</script> 
+<center><font size="-2"><a href="/banners2.shtml">Ротация кнопок.</a></font></center>
+
+
+</aside>
+</div>
+<div style="clear: both;"></div>
+
+<br>
+
+<div style="float:left; width: 32%; min-width: 360px; padding: 2px;">
+
+<table class=thdr>
+<tr><td><a href="/lastsoft/"><u>Новые версии программ</u></a></td></tr>
+</table>
+<table class=tlist>
+<tr><td><b>-</b> 07.09&nbsp;<a href="/opennews/art.shtml?num=63840">Релиз шрифтового движка FreeType 2.14</a> <span class=cnt>(53 +24)</span></td></tr>
+<tr><td><b>-</b> 07.09&nbsp;<a href="/opennews/art.shtml?num=63838">Выпуск среды рабочего стола Budgie 10.9.3</a> <span class=cnt>(25 &ndash;2)</span></td></tr>
+<tr><td><b>-</b> 07.09&nbsp;<a href="/opennews/art.shtml?num=63836">Выпуск Armbian 25.8 и DietPi 9.16, дистрибутивов для одноплатных компьютеров</a> <span class=cnt>(23 +11)</span></td></tr>
+<tr><td><b>-</b> 07.09&nbsp;<a href="/opennews/art.shtml?num=63835">Выпуск uutils 0.2.0, варианта GNU Coreutils на языке Rust </a> <span class=cnt>(134 +15)</span></td></tr>
+<tr><td><b>-</b> 06.09&nbsp;<a href="/opennews/art.shtml?num=63834">Первый альфа выпуск дистрибутива KDE Linux, развиваемого проектом KDE</a> <span class=cnt>(132 +7)</span></td></tr>
+<tr><td><b>-</b> 06.09&nbsp;<a href="/opennews/art.shtml?num=63833">Новые версии Debian 13.1 и 12.12 </a> <span class=cnt>(65 +21)</span></td></tr>
+<tr><td><b>-</b> 05.09&nbsp;<a href="/opennews/art.shtml?num=63818">Выпуск графического редактора GIMP 3.1.4</a> <span class=cnt>(72 +38)</span></td></tr>
+<tr><td><b>-</b> 05.09&nbsp;<a href="/opennews/art.shtml?num=63827">Выпуск LKRG 1.0.0 для защиты от эксплуатации уязвимостей в ядре Linux</a> <span class=cnt>(55 +18)</span></td></tr>
+<tr><td><b>-</b> 04.09&nbsp;<a href="/opennews/art.shtml?num=63824">Релиз дистрибутива Linux Mint 22.2</a> <span class=cnt>(156 +19)</span></td></tr>
+<tr><td><b>-</b> 04.09&nbsp;<a href="/opennews/art.shtml?num=63820">Выпуск miracle-wm 0.7, композитного менеджера на базе Wayland и Mir </a> <span class=cnt>(17 +2)</span></td></tr>
+
+<!--
+</table>
+<table class=ttxt>
+<tr><td class=tmenu>
+Программы:<br>
+&nbsp;	08.09&nbsp;<a href="https://github.com/audacious-media-player/audacious/tags" style="">Audacious 4.5.1</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/numpy/numpy/tags" style="">NumPy 2.3.3</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/i2p/i2p.i2p/tags" style="">I2P 2.9.0</a><br>
+&nbsp;	07.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63838" style="font-weight: 600;">Budgie 10.9.3</a><br>
+&nbsp;	07.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63840" style="font-weight: 600;">FreeType 2.14.0</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/clementine-player/Clementine/tags" style="">Clementine 1.4.1.51</a><br>
+&nbsp;	07.09&nbsp;<a href="https://github.com/bminor/binutils-gdb/tags" style="">GDB 17.0</a><br>
+&nbsp;	06.09&nbsp;<a href="https://github.com/HandBrake/HandBrake/tags" style="">HandBrake 1.10.2</a><br>
+&nbsp;	06.09&nbsp;<a href="https://github.com/gorhill/uBlock/tags" style="">ublock 1.66.0</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/GNOME/glib/tags" style="">Glib 2.86.0</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/linuxmint/cinnamon/tags" style="">Cinnamon 6.4.11</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/containers/podman/tags" style="">Podman 5.6.1</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/drupal/drupal/tags" style="">Drupal 11.2.4</a><br>
+&nbsp;	05.09&nbsp;<a href="https://github.com/snort3/snort3/tags" style="">Snort 3.9.5.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/postgres/postgres/tags" style="">PostgreSQL 18-RC1</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/npm/cli/tags" style="">NPM 11.6.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/systemd/systemd/tags" style="">systemd 257.9</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/django/django/tags" style="">Django 5.2.6</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/moby/moby/tags" style="">docker 28.4.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63820" style="font-weight: 600;">miracle-wm 0.7.0</a><br>
+&nbsp;	04.09&nbsp;<a href="https://github.com/golang/go/tags" style="">go 1.25.1</a><br>
+&nbsp;	03.09&nbsp;<a href="https://get.geo.opera.com/pub/opera/desktop/" style="">Opera 121.0.5600.50</a><br>
+&nbsp;	03.09&nbsp;<a href="https://gitlab.freedesktop.org/mesa/mesa/-/tags" style="">mesa 3d 25.2.2</a><br>
+<br>Дистрибутивы:<br>
+&nbsp;	06.09&nbsp;<a href="https://www.opennet.ru/opennews/art.shtml?num=63833" style="font-weight: 600;">Debian GNU/Linux 13.1</a><br>
+&nbsp;	04.09&nbsp;<a href="https://blog.linuxmint.com/" style="">Linux Mint 22.2</a><br>
+&nbsp;	04.09&nbsp;<a href="https://chromereleases.googleblog.com/" style="">Chrome OS 139.0.7258.164</a><br>
+&nbsp;	29.08&nbsp;<a href="https://www.armbian.com/" style="">Armbian 25.8.1</a><br>
+&nbsp;	21.08&nbsp;<a href="https://gitlab.tails.boum.org/tails/tails/-/tags" style="">Tails 6.19</a><br>
+&nbsp;	19.08&nbsp;<a href="https://blogs.oracle.com/solaris/" style="">Solaris 11.4 SRU84</a><br>
+
+<br>Актуальные ядра Linux:<br>
+-->
+<!-- #include file="kernel/kernel.inc"-->
+<!-- </td></tr> -->
+<tr bgcolor="#D9DAC6" align=right><td class=tmenu><a href="/opennews/opennews_prog.rss">RSS</a> | <a href="/lastsoft/">Полный список версий ПО  <font color=red>&gt;&gt;</font></a>&nbsp;</td></tr>
+</table>
+
+</div>
+<div style="float:left; width: 32%; min-width: 360px; padding: 2px;">
+
+<table class=thdr>
+<tr><td><a href="/security/"><u>Проблемы безопасности</u></a></td></tr>
+</table>
+
+<table class=tlist>
+<tr><td><b>-</b> 06.09&nbsp;<a href="/opennews/art.shtml?num=63831">В ходе атаки GhostAction скомпрометировано 817 репозиториев на GitHub</a> <span class=cnt>(101 +13)</span></td></tr>
+<tr><td><b>-</b> 24.08&nbsp;<a href="/opennews/art.shtml?num=63769">Выпуск эмулятора 86Box 5.0</a> <span class=cnt>(78 +31)</span></td></tr>
+<tr><td><b>-</b> 24.08&nbsp;<a href="/opennews/art.shtml?num=63754">Атака на браузерные дополнения с менеджерами паролей, использующая кликджекинг</a> <span class=cnt>(72 +26)</span></td></tr>
+<tr><td><b>-</b> 18.08&nbsp;<a href="/opennews/art.shtml?num=63740">Уязвимости в tar-fs и 7-Zip, позволяющие записать файлы за пределы базового каталога</a> <span class=cnt>(62 +19)</span></td></tr>
+<tr><td><b>-</b> 14.08&nbsp;<a href="/opennews/art.shtml?num=63726">Уязвимость в реализациях протокола HTTP/2, упрощающая проведение DoS-атак</a> <span class=cnt>(89 +16)</span></td></tr>
+<tr><td><b>-</b> 11.08&nbsp;<a href="/opennews/art.shtml?num=63710">Уязвимость в ядре Linux, позволяющая обойти sandbox-изоляцию Chrome</a> <span class=cnt>(57 +26)</span></td></tr>
+<tr><td><b>-</b> 05.08&nbsp;<a href="/opennews/art.shtml?num=63685">В Proton Authenticator для iOS выявлено оседание секретных ключей в отладочном логе</a> <span class=cnt>(46 +18)</span></td></tr>
+<tr><td><b>-</b> 04.08&nbsp;<a href="/opennews/art.shtml?num=63677">Пакет StarDict в Debian отправляет выделенный текст на внешние серверы </a> <span class=cnt>(410 +70)</span></td></tr>
+<tr><td><b>-</b> 03.08&nbsp;<a href="/opennews/art.shtml?num=63669">Достижение выполнения кода при контроле над текстом комментария в Python-скрипте</a> <span class=cnt>(86 +29)</span></td></tr>
+<tr><td><b>-</b> 02.08&nbsp;<a href="/opennews/art.shtml?num=63663">Mozilla предупредила о фишинг-атаке на разработчиков дополнений к Firefox</a> <span class=cnt>(19 +4)</span></td></tr>
+<tr><td><b>-</b> 01.08&nbsp;<a href="/opennews/art.shtml?num=63662">В AUR-репозитории Arch Linux выявлены ещё 6 вредоносных пакетов</a> <span class=cnt>(137 +19)</span></td></tr>
+<tr><td><b>-</b> 31.07&nbsp;<a href="/opennews/art.shtml?num=63656">Перехвачены 4 учётные записи в PyPI и выпущены вредоносные релизы num2words</a> <span class=cnt>(43 +4)</span></td></tr>
+<tr><td><b>-</b> 31.07&nbsp;<a href="/opennews/art.shtml?num=63651">Уязвимость в SUSE Manager, позволяющая выполнять root-операции без аутентификации</a> <span class=cnt>(36 +5)</span></td></tr>
+<tr><td><b>-</b> 30.07&nbsp;<a href="/opennews/art.shtml?num=63647">Фишинг-атака на сопровождающих Python-пакеты в репозитории PyPI</a> <span class=cnt>(37 +6)</span></td></tr>
+<tr><td><b>-</b> 27.07&nbsp;<a href="/opennews/art.shtml?num=63635">NPM-пакет Stylus был по ошибке заблокирован из-за подозрений в наличии вредоносного кода</a> <span class=cnt>(34 +7)</span></td></tr>
+
+<!-- #include virtual="./news/sec_news_cache.inc"-->
+<tr bgcolor="#D9DAC6" align=right><td class=tmenu><a href="/opennews/opennews_sec.rss">RSS</a> | <a href="/security/">Подробнее</a> | <a href="/opennews/index.shtml?f=vuln&subsection=on&skip=15">Далее <font color=red>&gt;&gt;</font></A>&nbsp;</td></tr>
+</table>
+
+</div>
+<div style="float:left; width: 32%; min-width: 360px; padding: 2px;">
+
+
+    
+<!--htdig_noindex-->
+<table class=thdr>
+<tr><td>Последние темы <a href="http://forum.opennet.ru">форума</a></b> (<a href="/openforum/forum_all.rss">RSS</a>)</td></tr>
+</table>
+<table class=tlist>
+<tr><td><b>-</b> 14:01 <a href="/openforum/vsluhforumID15/4971.html" title="Открытые системы на рабочей станции: icewm, xfce...">Плюсы и минусы Xubuntu</a>&nbsp;(2)</td></tr>
+<tr><td><b>-</b> 07:54 <a href="/openforum/vsluhforumID12/7437.html" title="Настройка Squid, Tor и прокси серверов: Tor">Не верю в тор</a>&nbsp;(12)</td></tr>
+<tr><td><b>-</b> 09:26 <a href="/openforum/vsluhforumID14/2783.html" title="Samba, вопросы интеграции Unix и Windows: Учет работы пользователей, логи">Linux машины и домен AD + инвентаризация linux машин</a>&nbsp;(5)</td></tr>
+<tr><td><b>-</b> 06:13 <a href="/openforum/vsluhforumID1/98073.html" title="Открытые системы на сервере: Файловые системы, диски / Linux">ZFS и MemAvailable</a>&nbsp;(5)</td></tr>
+<tr><td><b>-</b> 14:50 <a href="/openforum/vsluhforumID1/98071.html" title="Открытые системы на сервере: Системное и пользовательское ПО / Linux">Посоветуйте хороший offline CLI переводчик под Linux</a>&nbsp;(2)</td></tr>
+<tr><td><b>-</b> 12:08 <a href="/openforum/vsluhforumID15/4970.html" title="Открытые системы на рабочей станции: Установка ОС / Linux">Astra Linux и лицензия GPL</a>&nbsp;(3)</td></tr>
+<tr><td><b>-</b> 12:30 <a href="/openforum/vsluhforumID9/10499.html" title="Программирование под UNIX: C/C++">вопросы по crosstools-ng</a>&nbsp;(1)</td></tr>
+<tr><td><b>-</b> 22:52 <a href="/openforum/vsluhforumID10/5699.html" title="Информационная безопасность: Авторизация и аутентификация / Linux">pam_oath TOTP проверка будущих значений</a>&nbsp;(2)</td></tr>
+<tr><td><b>-</b> 16:17 <a href="/openforum/vsluhforumID1/98060.html" title="Открытые системы на сервере: Виртуализация / Linux">Proxmox 9.04  named: failed to connect to notification socket &apos;</a>&nbsp;(2)</td></tr>
+<tr><td><b>-</b> 14:45 <a href="/openforum/vsluhforumID13/1055.html" title="Оптимизация и Промышленные системы: Коммерческие системы">Re: Mc68020  vme bus and scb68155 </a>&nbsp;(0)</td></tr>
+<tr><td><b>-</b> 12:27 <a href="/openforum/vsluhforumID1/98054.html" title="Открытые системы на сервере: Файловые системы, диски / FreeBSD">После обновления FreeBSD до 14.3  на ZFS  не видит bootpool</a>&nbsp;(5)</td></tr>
+<tr><td><b>-</b> 03:42 <a href="/openforum/vsluhforumID15/4965.html" title="Открытые системы на рабочей станции: Пакетные менеджеры / Linux">Опыт применения guix</a>&nbsp;(2)</td></tr>
+<tr><td><b>-</b> 12:36 <a href="/openforum/vsluhforumID12/7436.html" title="Настройка Squid, Tor и прокси серверов: Разное">Распределённая сеть по WiFi</a>&nbsp;(4)</td></tr>
+<tr><td><b>-</b> 00:20 <a href="/openforum/vsluhforumID15/4963.html" title="Открытые системы на рабочей станции: Драйверы, оборудование / Linux">Будущее железа для AI</a>&nbsp;(2)</td></tr>
+<tr><td><b>-</b> 22:27 <a href="/openforum/vsluhforumID7/1204.html" title="Портативные устройства, платы и ноутбуки: Linux на ноутбуке">Замена wi-fi карты BCM43142</a>&nbsp;(18)</td></tr>
+
+</table>
+<!--/htdig_noindex-->
+
+
+</div>
+<div style="clear: both;"></div>
+
+<script language="JavaScript">
+if (document.location.hash == '#mini'){
+    tabClick(2);
+}else if (document.location.hash == '#imp'){
+    tabClick(3);
+}
+</script>
+
+
+<!--htdig_noindex-->
+<noindex>
+<br>
+
+
+</noindex>
+<!--/htdig_noindex-->
+
+
+<!-- footer -->
+<!--htdig_noindex-->
+<br><br>
+<div style="background-color: #E9EAD6; width:100%; height: 62px;">
+<div style="margin-right: 20px; float:left; line-height:61px; vertical-align: middle; margin-left: 10px; font-size: 120%;">
+Партнёры:
+</div>
+<div style="float:left; height:61px;  line-height:61px; margin-left: 20px;">
+<a style="align: middle;" target=_blank href="https://www.postgrespro.ru"><img src="/img/pp_200.png" height=60 width=200 alt="PostgresPro"></a>
+</div>
+<div style="float:left; height:61px;  line-height:61px; margin-left: 20px;">
+<a style="align: middle;" target=_blank href="https://ishosting.com/ru">
+<img src="/img/inferno2.png" height=60 width=200 alt="Inferno Solutions"></a>
+</div>
+<div style="float:right; height:61px;  line-height:61px;  margin-left: 15px;">
+<a style="align: middle;" target=_blank href="http://hoster.ru/?utm_source=site&utm_medium=banner&utm_campaign=opennet"><img src="/img/dh143x60t.png" height=60 width=143 alt="Hosting by Hoster.ru"></a>
+</div>
+<div style="float:right;  height:61px;  line-height: 61px; vertical-align: middle;font-size: 120%;">
+Хостинг:
+</div>
+
+</div>
+<div style="clear: both;"></div>
+
+
+<br>
+<TABLE class=ttxt style="border-top: 3px solid #C9CaB6;">
+<TD WIDTH="35%">
+<A HREF="/cgi-bin/opennet/bookmark.cgi">Закладки на сайте</A><BR>
+<A HREF="/cgi-bin/opennet/bookmark.cgi?submit=add" target="blank_">Проследить за страницей</A>
+</TD>
+<TD WIDTH="65%" ALIGN=RIGHT>
+Created&nbsp;1996-2025&nbsp;by <B><A HREF="/contact.shtml" title="email maxim.chirkov@gmail.com">Maxim&nbsp;Chirkov</A></B><BR>
+<A HREF="https://www.opennet.ru/add.shtml">Добавить</A>, <A HREF="https://www.opennet.ru/donate.shtml" style="color: #C00000;">Поддержать</A>, <A HREF="https://www.opennet.ru/banners2.shtml">Вебмастеру</A>
+</TD>
+</TR>
+</TABLE>
+<!--/htdig_noindex-->
+<!-- end of footer -->
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-123449-1', 'auto');
+    ga('send', 'pageview');
+</script>
+-->
+
+
+</BODY>
+</HTML>
