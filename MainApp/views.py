@@ -20,7 +20,10 @@ items = [
 ]
 
 
-def home(request):
+def home(request) -> HttpResponse:
+    return render(request, 'index.html')
+
+#def home(request):
     text = """
     <h1>"Изучаем django"</h1>
     <strong>Автор</strong>: <i>Васин В.С.</i>
@@ -65,3 +68,5 @@ def get_items(request):
         result += f""" <li><a href='/item{item["id"]}'> {item["name"]} </a> </li> """
     result += "</ol>"
     return HttpResponse(result)
+
+
