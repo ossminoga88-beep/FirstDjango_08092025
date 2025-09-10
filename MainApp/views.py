@@ -21,7 +21,11 @@ items = [
 
 
 def home(request) -> HttpResponse:
-    return render(request, 'index.html')
+    context = {
+        "name": "Васин Владимир Сергеевич",
+        "email": "ossminoga@rambler.ru"
+    }
+    return render(request, 'index.html', context)
 
 #def home(request):
     text = """
