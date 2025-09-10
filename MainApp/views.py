@@ -38,5 +38,20 @@ def about(request):
         """
     return HttpResponse(text)
 
+
+#/item/1
+#/item/2
+#/item/3
+#/....
+#/item/n-1
+#/item/n
 def get_item(request, item_id: int):
-    return HttpResponse(item_id)
+    """По указанному id вщзвращает элемент из списка"""
+    for item in items:
+        if item["id"] == item_id:
+            result = f"""
+            <h2> Имя: {item["name"]} </h2>
+            <p> Количество: {item["quantity"]} </p>
+            """
+            return HttpResponse(result)
+    return HttpResponseNotFound(f' Item with ad={item_id} not found')
