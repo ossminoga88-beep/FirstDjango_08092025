@@ -3,10 +3,10 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 # Create your views here.
 author = {
-    "Имя": "Владимир",
-    "Отчество": "Сергеевич",
-    "Фамилия": "Васин",
-    "телефон": "8-916-678-85-17",
+    "name": "Владимир",
+    "middle_name": "Сергеевич",
+    "last_name": "Васин",
+    "phone": "8-916-678-85-17",
     "email": "ossminoga88@gmail.com",
 }
 
@@ -23,7 +23,8 @@ items = [
 def home(request) -> HttpResponse:
     context = {
         "name": "Васин Владимир Сергеевич",
-        "email": "ossminoga@rambler.ru"
+        "email": "ossminoga@rambler.ru",
+        "phone": "8-916-678-85-17"
     }
     return render(request, 'index.html', context)
 
@@ -36,24 +37,21 @@ def home(request) -> HttpResponse:
 
 
 def about(request):
-    text = f"""
-        Имя: {author['Имя']}<br>
-        Отчество: {author['Отчество']}<br>
-        Фамилия: {author['Фамилия']}<br>
-        телефон: {author['телефон']}<br>
-        email: {author['email']}<br>
-        """
-    return HttpResponse(text)
+    author = {
+        "name": "Владимир",
+        "middle_name": "Сергеевич",
+        "last_name": "Васин",
+        "phone": "8-916-678-85-17",
+        "email": "ossminoga88@gmail.com",
+    }
+    context = {
+        'author': author,
+    }
+    return render(request, "about.html", context)
 
 
-#/item/1
-#/item/2
-#/item/3
-#/....
-#/item/n-1
-#/item/n
 def get_item(request, item_id: int):
-    """По указанному id вщзвращает элемент из списка"""
+    """По указанному id возвращает элемент из списка"""
     for item in items:
         if item["id"] == item_id:
             result = f"""
