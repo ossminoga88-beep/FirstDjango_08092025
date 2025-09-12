@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item page</title>
+</head>
+<body>
+     <h2> Имя: {{ item.name | capfirst }} </h2>
+    <div>
+        <p> Количество: {{ item.count | default:"товар отсутствует." }} </p>
+    </div>
+    <div>
+        <p>Бренд: {{ item.brand }}</p>
+    </div> 
+    <div>
+        <p>Описание: {{ item.description }}</p>
+    </div>   
+
+    <h3> Цвета: </h3>
+    <ul class='ul_no_mark'>
+        {% for color in colors %}
+            <li> 
+                <span class="color-box" style='background-color: {{ color.name }};'></span> 
+                {{ color.name }}    
+            </li>       
+        {% empty %}
+            Информация по цветам отсутствует.
+        {% endfor %}
+    </ul>
+{% endblock  %}
+    
+</body>
+</html>

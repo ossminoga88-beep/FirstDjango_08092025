@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound
-
 # Create your views here.
+
+
 author = {
     "name": "Владимир",
     "middle_name": "Сергеевич",
@@ -28,13 +29,6 @@ def home(request) -> HttpResponse:
     }
     return render(request, 'index.html', context)
 
-#def home(request):
-    text = """
-    <h1>"Изучаем django"</h1>
-    <strong>Автор</strong>: <i>Васин В.С.</i>
-    """
-    return HttpResponse(text)
-
 
 def about(request):
     author = {
@@ -53,22 +47,18 @@ def about(request):
 def get_item(request, item_id: int):
     """По указанному id возвращает элемент из списка"""
     for item in items:
-        if item["id"] == item_id:
+        if item['id'] == item_id:
             result = f"""
-            <h2> Имя: {item["name"]} </h2>
-            <p> Количество: {item["quantity"]} </p>
-            <p> <a href='/items'> Назад к списку товаров </a></p>
+            <h2> Имя: {item['name']}</h2>
+            <p> Количество: {item["quantity"]} </a></p>
             """
             return HttpResponse(result)
         
-    return HttpResponseNotFound(f' Item with ad={item_id} not found')
-
+    return HttpResponseNotFound(f'Item with id={item+id} not found')
+        
 
 def get_items(request):
-    result = "<h1> Список товаров </h1><ol>"
-    for item in items:
-        result += f""" <li><a href='/item{item["id"]}'> {item["name"]} </a> </li> """
-    result += "</ol>"
-    return HttpResponse(result)
+    context = {"items": items}
+    return render(request, "items_list.html", context)
 
 
