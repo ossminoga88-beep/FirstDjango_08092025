@@ -6,6 +6,9 @@
     <title>item page</title>
 </head>
 <body>
+    <header>
+        / <a href="/">Home</a> / <a href="/about">About</a> / <a href="items">Items</a>
+    </header>
     <h2> Имя: {{ item.name }}</h2>
     {% if item.quantity == 0 %}
         <p>Количество: товар отсутствует.</p>
