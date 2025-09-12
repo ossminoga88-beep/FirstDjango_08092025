@@ -6,29 +6,15 @@
     <title>item page</title>
 </head>
 <body>
-     <h2> Имя: {{ item.name | capfirst }} </h2>
-    <div>
-        <p> Количество: {{ item.count | default:"товар отсутствует." }} </p>
-    </div>
-    <div>
-        <p>Бренд: {{ item.brand }}</p>
-    </div> 
-    <div>
-        <p>Описание: {{ item.description }}</p>
-    </div>   
+    <h2> Имя: {{ item.name }}</h2>
+    {% if item.quantity == 0 %}
+        <p>Количество: товар отсутствует.</p>
+    {% else %}
+    <p> Количество: {{ item.quantity }} </p>
+    {% endif %}
+    <br><br>
+    <hr>
+    <p><a href='/item'> Назад к списку товаров </a></p>
 
-    <h3> Цвета: </h3>
-    <ul class='ul_no_mark'>
-        {% for color in colors %}
-            <li> 
-                <span class="color-box" style='background-color: {{ color.name }};'></span> 
-                {{ color.name }}    
-            </li>       
-        {% empty %}
-            Информация по цветам отсутствует.
-        {% endfor %}
-    </ul>
-{% endblock  %}
-    
 </body>
 </html>

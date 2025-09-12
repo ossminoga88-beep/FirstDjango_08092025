@@ -48,17 +48,15 @@ def get_item(request, item_id: int):
     """По указанному id возвращает элемент из списка"""
     for item in items:
         if item['id'] == item_id:
-            result = f"""
-            <h2> Имя: {item['name']}</h2>
-            <p> Количество: {item["quantity"]} </a></p>
-            """
-            return HttpResponse(result)
-        
+            context = {
+                "item": item
+            }
+            return render(request, "item_page.html", context)
     return HttpResponseNotFound(f'Item with id={item+id} not found')
         
 
 def get_items(request):
-    context = {"items": items}
+    context = {"items": items }
     return render(request, "items_list.html", context)
 
 
