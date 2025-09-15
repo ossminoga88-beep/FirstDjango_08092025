@@ -1,0 +1,52 @@
+[
+{
+    "model": "MainApp.item",
+    "pk": 1,
+    "fields": {
+        "name": "Кросовки",
+        "brand": "adidas",
+        "count": 10,
+        "description": "Кросовки для бега "
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 2,
+    "fields": {
+        "name": "Куртка кожаная",
+        "brand": "Снежная Королева",
+        "count": 2,
+        "description": "с натуральным мехом"
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 3,
+    "fields": {
+        "name": "Coca-cola 1 литр",
+        "brand": "Coca-cola",
+        "count": 12,
+        "description": "Акция 3 по цене 2"
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 4,
+    "fields": {
+        "name": "Картофель фри",
+        "brand": "вкусно и точка",
+        "count": 0,
+        "description": "Сырный соус в подарок"
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 5,
+    "fields": {
+        "name": "Кепка",
+        "brand": "LCWAIKIKI",
+        "count": 124,
+        "description": "Модная"
+    }
+}
+]
